@@ -1,5 +1,6 @@
 <section>
   <h1> Hello, form-tutorial </h1>
+  <p appHighlight>Highlight me!</p>
   <form [formGroup]="myForm">
       <input formControlName="firstName" type="text">
       <input formControlName="lastName" type="text">
@@ -30,5 +31,8 @@
     }
 
   </div>
+</section>
+<section>
+  <ng-template *ngFor="let item of [1,2,3] as items; trackBy: myTrack; index as i">{{i}}</ng-template>
 </section>
 <router-outlet />
